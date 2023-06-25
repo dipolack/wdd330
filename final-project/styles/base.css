@@ -1,0 +1,97 @@
+@media only screen and (max-width: 768px) {
+
+    html {
+        background-color: #959a49;
+        display: flex;
+        justify-content: center;
+    }
+    
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        box-shadow: 0 0 10px #6b6968;
+    }
+    
+    header h1 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    nav {
+        position: static;
+    }
+    
+    nav>ul {
+        grid-template-columns: 1fr;
+    }
+    
+    section.grid {
+        grid-template-columns: 1fr;
+    } 
+    
+    section.grid img {
+        max-width: 100%;
+    }
+    
+    section {
+        padding: 0 1em;
+    } 
+    
+    section.wireframe {
+        padding: 1rem;
+        display: block;
+        grid-template-columns: 1fr;
+        width: 100%;
+    } 
+    
+    .content-wrapper {
+        color: #565656;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: 200px 200px 200px auto;
+        grid-template-areas:
+            "totalDrinksDisplay"
+            "weather-summary"
+            "weather-forcast"
+            "city-desc";
+        margin-block: 10px;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+    }
+
+   nav {
+        position: static;
+    }
+    
+    nav>ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    section.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section.grid img {
+        max-width: 100%;
+    }
+
+    section.wireframe {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .content-wrapper {
+        grid-template-rows: auto;
+        grid-template-areas:
+            "lastGrid weather-summary"
+            "weather-forcast city-desc";
+    }
+}
+
+  

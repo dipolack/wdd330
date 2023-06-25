@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your happy place</title>
+    <meta name="description" content="Your Happy Place Website">
+    <meta name="author" content="Dorca Polack">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css" media="(max-width:800px)">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 800px) and (max-width:992px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 992px)">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="header-quotes">
+            <a href="./index.html">
+                <picture>
+                    <source media="(min-width: 760px)" srcset="./images/logo.gif">
+                    <img src="./images/logo.gif" alt="Website logo">
+                </picture>
+            </a>
+            <h1>Your Happy Place</h1>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/fblogo.webp" width="30" height="30" alt="Facebook link"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/iglogo.webp" width="30" height="30" alt="Instagram link"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.webp" width="25" height="25" alt="Twitter link"></a>
+            </div>
+            <p class="subtext-title"><strong>You and us? We are meant to be.</strong></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./quotes.html">Happiness</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <main class="full-width">
+        
+        <div class="content-wrapper">
+            <div class="city-desc">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 699px)" srcset="./images/nyc.webp">
+                        <source media="(max-width: 990px)" srcset="./images/nyc.webp">
+                        <source srcset="images/nyc.webp">
+                        <img class="imgAuto" src="images/nyc.webp" alt="New York picture">
+                    </picture>
+                    <picture>
+                    <source media="(max-width: 699px)" srcset="./images/bookmovie.webp">
+                    <source media="(max-width: 990px)" srcset="./images/bookmovie.webp">
+                    <source srcset="images/bookmovie.webp">
+                    <img class="imgAuto2" src="images/bookmovie.webp" alt ="movies and book">
+                    </picture>
+                </div>
+                <div class="text-container">
+                    <p> Located in New York City, <br>
+                        Our mission is to be Your Happy Place!<br>
+                        Add a Splash of Joy to Your Day! <br>
+                        At our fun-filled site... <br>
+                        you have the power to select a quote <br>
+                        that resonates personally with you. <br>
+                        From a delightful array of random options... <br>
+                        Share your information with us <br> 
+                        and your favorite quote number! <br>
+                        We will work our magic and surprise you <br>
+                        (And your email Inbox) <br> 
+                        with a customized list of books and movies <br>
+                        that encapsulate the spirit of your chosen quote<br>
+                        ...and of course, your unique personality! <br><br>
+                        We are enchanted to meet you. </p>
+                </div>
+            </div>
+        </div>
+        
+
+            <div class="weather-summary">
+                <h3 class="ws-h3">The Weather at the Big Apple</h3>
+                <table class="ws-table">
+                    <tr>
+                        <th class="title-header">Source</th>
+                        <th class="data-header">Data</th>
+                    </tr>
+                    <tr>
+                        <td class="title-data">Current Description: </td>
+                        <td class="sum-data"><span id="d-current"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="title-data">Temp: </td>
+                        <td class="sum-data"><span id="d-temp"></span> &#176;F</td>
+                    </tr>
+                    <tr>
+                        <td class="title-data">Humidity: </td>
+                        <td class="sum-data"><span id="d-humid"></span>%</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="weather-forcast">
+                <h2 class="forcast-title">3 Day Forecast</h2>
+                <table class="forecast-table">
+                    <tr id="day-output">
+                        <td class="hidden"></td>
+                    </tr>
+                    <tr id="weather-output">
+                        <td class="hidden"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="lastGrid">
+                <p>The latest quote you picked was: <span id="latestQuoteText"></span></p>
+            </div>
+                       
+    </main>
+    
+
+    <footer>
+        ©Your Happy Place | Manhattan, NY 10036 | (917)719-971 | &copy;<span class="year">2023 Dorca Polack </span>
+        <p id="last-updated"></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/quotes.js"></script>
+    <script src ="scripts/weather.js"></script>
+    <script src="scripts/lastmodified.js"></script>
+
+</body>
+</html>
