@@ -12,7 +12,7 @@ const displayFavoriteQuote = () => {
     if (favoriteQuote == null) {
         favoriteQuote = "You haven't set a favorite quote yet.";
     }
-    dis.innerHTML = `<h3>Your latest chosen Quote was #: ${favoriteQuote}</h3>`;
+    dis.innerHTML = `<h2>Your latest chosen Quote was #: ${favoriteQuote}</h2>`;
 }
 
 const gatherData = async () => {
