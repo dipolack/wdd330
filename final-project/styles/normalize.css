@@ -474,7 +474,7 @@ figure figcaption {
 form, #favoriteQuoteDisplay, p#confirmation {
     padding: 1em;
     margin: 1em auto;
-    width: 50%; 
+    width: 40%; 
     border: 1px solid #a0b897; 
     border-radius: 5px; 
     background-color: #a0b897; 
