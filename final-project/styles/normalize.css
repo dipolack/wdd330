@@ -78,7 +78,6 @@ nav a:hover, span.navH {
   opacity: 0.5;
 }
 
-
 #hero-image {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -88,17 +87,29 @@ nav a:hover, span.navH {
   background-color: #e6f2ef;
   padding: 2rem;
   border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
 }
 
 #hero-image h2 {
   grid-column: 1 / span 3;
   margin-bottom: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#hero-image h2:hover {
+  transform: translateY(-10px);
 }
 
 #hero-image img {
   width: 100%;
   height: auto;
   border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+#hero-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .aboutus {
@@ -185,8 +196,7 @@ nav a:hover, span.navH {
 
 .city-desc,
 .weather-summary,
-.weather-forcast,
-.lastGrid {
+.weather-forcast {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,20 +224,14 @@ nav a:hover, span.navH {
 }
 
 .weather-summary {
-  max-width: 40%;
-  max-height: 20%;
+  max-width: 60%;
+  max-height: 40%;
   flex-direction: row;
 }
 
 .weather-forcast {
   max-width: 40%;
-  max-height: 20%;
-  flex-direction: row;
-}
-
-.lastGrid {
-  max-width: 40%;
-  max-height: 20%;
+  max-height: 30%;
   flex-direction: row;
 }
 
@@ -236,23 +240,22 @@ nav a:hover, span.navH {
     flex: 1;
 }
 
-.imgAuto {
-    width: 100%;
-    height: 100%; 
-    object-fit: contain;
-    object-position: center;
-    border-radius: 10px;
-    margin: 5px;
+.imgAuto, .imgAuto2 {
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+  margin: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.imgAuto2 {
-    width: 100%;
-    height: 100%; 
-    object-fit: contain;
-    object-position: center;
-    border-radius: 10px;
-    margin:5px
+.imgAuto:hover, .imgAuto2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 
 .socialmedia {
   display: flex;
@@ -489,12 +492,11 @@ button.next {
 }
 
 button.next:hover {
-    /* darken the button a bit when hovered over */
     background-color: #222;
 }
 
 h1.quote {
-    background-color: #eef; /* light blue background color */
+    background-color: #eef; 
     padding: 1em;
     border-radius: 5px;
 }

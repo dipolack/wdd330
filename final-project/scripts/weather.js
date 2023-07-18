@@ -18,6 +18,18 @@ function fetchCurrentReport() {
             document.getElementById('d-temp').textContent = parseInt(temp);
             let humidity = objectReturn.main.humidity;
             document.getElementById('d-humid').textContent = humidity;
+            let pressure = objectReturn.main.pressure;
+            document.getElementById('d-pressure').textContent = pressure;
+            let clouds = objectReturn.clouds.all;
+            document.getElementById('d-clouds').textContent = clouds;
+            let windSpeed = objectReturn.wind.speed;
+            document.getElementById('d-wind-speed').textContent = windSpeed;
+            let windDirection = objectReturn.wind.deg;
+            document.getElementById('d-wind-direction').textContent = windDirection;
+            let rainVolume = objectReturn.rain ? objectReturn.rain["3h"] : 0;
+            document.getElementById('d-rain-volume').textContent = rainVolume;
+            let snowVolume = objectReturn.snow ? objectReturn.snow["3h"] : 0;
+            document.getElementById('d-snow-volume').textContent = snowVolume;
         });
 }
 
@@ -38,7 +50,14 @@ function fetchThreeDayjsonForcastReport() {
                         fIcon: jsonForcast[i].weather[0].icon,
                         fDesc: jsonForcast[i].weather[0].description,
                         fTemp: parseInt(jsonForcast[i].main.temp),
-                        fDate: jsonForcast[i].dt_txt.slice(0, 10)
+                        fDate: jsonForcast[i].dt_txt.slice(0, 10),
+                        fHumidity: jsonForcast[i].main.humidity,
+                        fPressure: jsonForcast[i].main.pressure,
+                        fClouds: jsonForcast[i].clouds.all,
+                        fWindSpeed: jsonForcast[i].wind.speed,
+                        fWindDirection: jsonForcast[i].wind.deg,
+                        fRainVolume: jsonForcast[i].rain ? jsonForcast[i].rain["3h"] : 0,
+                        fSnowVolume: jsonForcast[i].snow ? jsonForcast[i].snow["3h"] : 0
                     };
                     console.log("f=" + f);
                     threeDay.push(f);
@@ -75,7 +94,6 @@ function fetchThreeDayjsonForcastReport() {
                 return dayOfWeek;
             }
         });
-
 }
 
 

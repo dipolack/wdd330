@@ -23,8 +23,6 @@ const getNewQuote = async () => {
     text.innerHTML = `${quoteNumber + 1}. ${quote}`;
     author.innerHTML = "~ " + quoteAuthor;
 
-    tweetButton.href = "https://twitter.com/intent/tweet?text=" + quote + " ~ " + quoteAuthor;
-
     quoteNumber = (quoteNumber + 1) % allQuotes.length;
     localStorage.setItem('quoteNumber', quoteNumber.toString());
 }

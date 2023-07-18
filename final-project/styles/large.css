@@ -8,7 +8,7 @@
     grid-template-areas:
     "city-desc weather-summary"
     "city-desc weather-forcast"
-    "city-desc lastGrid";
+    "city-desc";
     margin-block: 10px;
     }
     body {
@@ -39,7 +39,7 @@
     .content-wrapper {
         grid-template-rows: auto;
         grid-template-areas:
-            "lastGrid weather-summary"
+            "weather-summary"
             "weather-forcast city-desc";
     }
 }

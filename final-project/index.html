@@ -80,29 +80,53 @@
         </div>
         
 
-            <div class="weather-summary">
-                <h2 class="ws-h3">The Weather at the Big Apple</h2>
-                <table class="ws-table">
-                    <tr>
-                        <th class="title-header">Source</th>
-                        <th class="data-header">Data</th>
-                    </tr>
-                    <tr>
-                        <td class="title-data">Current Description: </td>
-                        <td class="sum-data"><span id="d-current"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="title-data">Temp: </td>
-                        <td class="sum-data"><span id="d-temp"></span> &#176;F</td>
-                    </tr>
-                    <tr>
-                        <td class="title-data">Humidity: </td>
-                        <td class="sum-data"><span id="d-humid"></span>%</td>
-                    </tr>
-                </table>
-            </div>
-    
-            <div class="weather-forcast">
+        <div class="weather-summary">
+            <h2 class="ws-h3">The Weather at the Big Apple</h2>
+            <table class="ws-table">
+                <tr>
+                    <th class="title-header">Source</th>
+                    <th class="data-header">Data</th>
+                </tr>
+                <tr>
+                    <td class="title-data">Current Description: </td>
+                    <td class="sum-data"><span id="d-current"></span></td>
+                </tr>
+                <tr>
+                    <td class="title-data">Temp: </td>
+                    <td class="sum-data"><span id="d-temp"></span> &#176;F</td>
+                </tr>
+                <tr>
+                    <td class="title-data">Humidity: </td>
+                    <td class="sum-data"><span id="d-humid"></span>%</td>
+                </tr>
+                <tr>
+                    <td class="title-data">Pressure: </td>
+                    <td class="sum-data"><span id="d-pressure"></span> hPa</td>
+                </tr>
+                <tr>
+                    <td class="title-data">Cloud Coverage: </td>
+                    <td class="sum-data"><span id="d-clouds"></span>%</td>
+                </tr>
+                <tr>
+                    <td class="title-data">Wind Speed: </td>
+                    <td class="sum-data"><span id="d-windSpeed"></span> m/s</td>
+                </tr>
+                <tr>
+                    <td class="title-data">Wind Direction: </td>
+                    <td class="sum-data"><span id="d-windDirection"></span> degrees</td>
+                </tr>
+                <tr>
+                    <td class="title-data">Rain Volume: </td>
+                    <td class="sum-data"><span id="d-rainVolume"></span> mm</td>
+                </tr>
+                <tr>
+                    <td class="title-data">Snow Volume: </td>
+                    <td class="sum-data"><span id="d-snowVolume"></span> mm</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="weather-forcast">
                 <h2 class="forcast-title">3 Day Forecast</h2>
                 <table class="forecast-table">
                     <tr id="day-output">
@@ -112,10 +136,6 @@
                         <td class="hidden"></td>
                     </tr>
                 </table>
-            </div>
-
-            <div class="lastGrid">
-                <p>The latest quote you picked was: <span id="latestQuoteText"></span></p>
             </div>
                        
     </main>

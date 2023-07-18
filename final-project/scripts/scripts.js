@@ -43,3 +43,25 @@ const gatherData = async () => {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+
+    const inputs = document.querySelectorAll('input');
+
+    inputs.forEach((input) => {
+
+        input.addEventListener('focus', function() {
+
+            this.style.transform = 'scale(1.1)';
+            this.style.boxShadow = '5px 5px 5px grey';
+        });
+
+        input.addEventListener('blur', function() {
+
+            this.style.transform = 'none';
+            this.style.boxShadow = 'none';
+        });
+    });
+});
+

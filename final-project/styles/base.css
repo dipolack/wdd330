@@ -55,7 +55,6 @@
         grid-gap: 20px;
         grid-template-rows: 200px 200px 200px auto;
         grid-template-areas:
-            "totalDrinksDisplay"
             "weather-summary"
             "weather-forcast"
             "city-desc";
@@ -89,7 +88,7 @@
     .content-wrapper {
         grid-template-rows: auto;
         grid-template-areas:
-            "lastGrid weather-summary"
+            "weather-summary"
             "weather-forcast city-desc";
     }
 }
