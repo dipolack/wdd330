@@ -22,67 +22,67 @@
                     <img src="./images/logo.gif" alt="Website logo">
                 </picture>
             </a>
-            <h1>Your Happy Place</h1> <br>
+            <h1>Your Happy Place</h1>
             <div class="socialmedia">
                 <a href="https://www.facebook.com/" target="_blank"><img src="images/fblogo.webp" width="30" height="30" alt="Facebook link"></a>
                 <a href="https://instagram.com" target="_blank"><img src="images/iglogo.webp" width="30" height="30" alt="Instagram link"></a>
                 <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.webp" width="25" height="25" alt="Twitter link"></a>
             </div>
             <p class="subtext-title"><strong>Happiness at your fingertips</strong></p>
-        </header>
-        
-        <nav>
-            <ul>
-                <li><a class="" href=".">Home</a></li>
-                <li><a class="#" href="./quotes.html">Happiness</a></li>
-                <li><a class="" href="./aboutus.html">About Us</a></li>
-                <li><a class="" href="./resources.html">Resources</a></li>
-    
-            </ul>
-        </nav>
-
-        <div class="container">
-            <form id="userInfo" onsubmit="event.preventDefault(); gatherData();">
-                <label for="firstName">First Name:</label><br>
-                <input type="text" id="firstName" name="firstName"><br>
-                <label for="lastName">Last Name:</label><br>
-                <input type="text" id="lastName" name="lastName"><br>
-                <label for="age">Age:</label><br>
-                <input type="age" id="age" name="age"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="favoriteQuote">My favorite quote is #:</label><br>
-                <input type="text" id="favoriteQuote" name="favoriteQuote"><br>
-                <input type="submit" value="Submit">
-            </form>
-
-            <div id="favoriteQuoteDisplay"></div>
-
-            <p id="confirmation"></p>
-          
-            <hr/>
-
-            <h1>
-                <i class="fa fa-quote-left"></i>
-                <span class="quote" id="quote"></span>
-                <i class="fa fa-quote-right"></i>
-            </h1>
-            
-            <p class="author" id="author"></p>
-            
-            <div class="buttons">
-                <button class="next">Next quote</button>
-            </div>
         </div>
-        <footer>
-            ©Your Happy Place | Manhattan, NY 10036 | (917)719-971 | &copy;<span class="year">2023 Dorca Polack </span>
-            <p id="last-updated"></p>
-        </footer>
+    </header>
 
-        <!-- Update Javascript reference -->
-        <script src="scripts/quotes.js"></script>
-        <script src="scripts/scripts.js"></script>
-        <script src="scripts/lastmodified.js"></script>
-    </body>
+    <nav>
+        <ul>
+            <li><a class="" href=".">Home</a></li>
+            <li><a class="#" href="./quotes.html">Happiness</a></li>
+            <li><a class="" href="./aboutus.html">About Us</a></li>
+            <li><a class="" href="./resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form id="userInfo" onsubmit="event.preventDefault(); gatherData();">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName"><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="favoriteQuote">My favorite quote is #:</label><br>
+            <input type="text" id="favoriteQuote" name="favoriteQuote"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="favoriteQuoteDisplay"></div>
+
+        <p id="confirmation"></p>
+
+        <hr>
+
+        <h1>
+            <i class="fa fa-quote-left"></i>
+            <span class="quote" id="quote"></span>
+            <i class="fa fa-quote-right"></i>
+        </h1>
+        
+        <p class="author" id="author"></p>
+
+        <div class="buttons">
+            <button class="next">Next quote</button>
+        </div>
+    </div>
+
+    <footer>
+        ©Your Happy Place | Manhattan, NY 10036 | (917)719-971 | &copy;<span class="year">2023 Dorca Polack </span>
+        <p id="last-updated"></p>
+    </footer>
+
+    <!-- Update Javascript reference -->
+    <script src="scripts/quotes.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/lastmodified.js"></script>
+</body>
 </html>
-
